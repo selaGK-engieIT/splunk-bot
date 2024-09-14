@@ -1,5 +1,5 @@
 import streamlit as st
-from pages import chat, home, faq, settings, feedback
+from pages import chat, home, faq
 
 def sidebar():
     st.sidebar.title("Navigation")
