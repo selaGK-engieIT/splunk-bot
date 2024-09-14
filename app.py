@@ -3,7 +3,7 @@ from pages import chat, home, faq, settings, feedback
 
 def sidebar():
     st.sidebar.title("Navigation")
-    selection = st.sidebar.radio("Go to", ["Home", "Chat", "FAQ / Help", "Settings", "Feedback"])
+    selection = st.sidebar.radio("Go to", ["Home", "Chat", "FAQ / Help"])
     return selection
 
 def main():
@@ -14,10 +14,6 @@ def main():
         chat.display()
     elif page == "FAQ / Help":
         faq.display()
-    elif page == "Settings":
-        settings.display()
-    elif page == "Feedback":
-        feedback.display()
 
 if __name__ == '__main__':
     main()
